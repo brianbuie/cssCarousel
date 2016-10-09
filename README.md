@@ -100,7 +100,7 @@ in order to use more than 10 elements, you'll need to create a few css rules, bu
 
 note: if you need 15 items, you'll need to create the appropriate rules and radio elements for 11, 12, 13, 14, and 15
 
-On this section, every new items definition is +100%
+On this section, every new item's definition is +100%
 ```css
 /*
  * Carousel width based on number of items
@@ -117,7 +117,7 @@ On this section, every new items definition is +100%
 /* next item - width: 1100% */
 ```
 
-Every new rule in this block adds +1 to inside both "nth-of-type" pseudo-selectors and then -100% on the margin-left
+Every new rule in this block adds +1 to inside both "nth-of-type" pseudo-class selectors and then -100% on the margin-left
 ```css
 .cssCarousel > input:nth-of-type(1):checked ~ .cssCarousel__viewport > ul{ margin-left: 0; }
 .cssCarousel > input:nth-of-type(2):checked ~ .cssCarousel__viewport > ul{ margin-left: -100%; }
@@ -146,16 +146,19 @@ Last block to create, copy this to a new line and replace the number inside nth-
 }
 ```
 
-
 and lastly, you'll have to add the appropriate radio element and item with label to the html:
+
 ```html
-<input type="radio" name="cssCarousel__control" id="matchingId" />
+<input type="radio" name="slider2" id="matchingId" />
 ```
+
 and the label for it on the 11th item:
+
 ```html
 <label for="matchingId">
 ```
-you can name the id whatever you want, just make sure the appropriate item label has a matching 'for=""' attribute
+
+you can name the id whatever you want, just make sure the appropriate item label has a matching 'for' attribute
 
 ## Changing the carousel item size
 in the css

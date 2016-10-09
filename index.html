@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cssCarousel</title>
+	<link href="csscarousel.css" rel="stylesheet">
+
+	<style>
+		body{
+			margin: 0;
+			background: black;
+			color: white;
+			font-family: "Helvetica", sans-serif;
+		}
+		.container{
+			padding: 2em;
+		}
+		a, a:focus, a:visited{
+			color: #3b7be2;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+
+<section class="cssCarousel">
+	<input type="radio" name="carousel-1" id="first-movie" />
+	<input type="radio" name="carousel-1" id="arbitrary" />
+	<input type="radio" name="carousel-1" id="unique-id" />
+	<input type="radio" name="carousel-1" id="item-4" checked />
+	<input type="radio" name="carousel-1" id="item-5" />
+	<input type="radio" name="carousel-1" id="item-6" />
+	<input type="radio" name="carousel-1" id="item-7" />
+	<input type="radio" name="carousel-1" id="item-8" />
+	<input type="radio" name="carousel-1" id="item-9" />
+	<input type="radio" name="carousel-1" id="last-movie" />
+
+	<div class="cssCarousel__viewport">
+		<ul class="cssCarousel--7-items">
+			<li>
+				<label for="first-movie">
+					<img src="https://image.tmdb.org/t/p/original/vXjVd0Vu0MXRZnga7wEnHIIhO5B.jpg" />
+				</label>
+				<div class="cssCarousel--showOnFocus">
+					<h1>Movie 1 Headline</h1>
+					<a href="#">Link</a>
+				</div>
+			</li>
+			<li>
+				<label for="arbitrary">
+					<img src="https://image.tmdb.org/t/p/original/vXjVd0Vu0MXRZnga7wEnHIIhO5B.jpg" />
+				</label>
+				<div class="cssCarousel--showOnFocus">
+					<h1>Movie 2 Headline</h1>
+					<h2>Subhead</h2>
+					<p>Misanthropic TV weatherman, Phil Connors, is annoyed and despondent when he's assigned the job of covering the annual Groundhog festivities in the small "Hick" town of Punxsutawney.</p>
+				</div>
+			</li>
+			<li>
+				<label for="unique-id">
+					<div class="container">
+						<h1>Content without an image</h1>
+						<h3>Like these movies? Try one of these other movies:</h3>
+						<p><a href="#">Groundhog Day</a></p>
+						<p><a href="#">Groundhog Day</a></p>
+						<p><a href="#">Groundhog Day</a></p>
+						<p><a href="#">Groundhog Day</a></p>
+					</div>
+				</label>
+				<div class="cssCarousel--showOnFocus">
+				</div>
+			</li>
+			<li>
+				<label for="item-4">
+					<img src="https://image.tmdb.org/t/p/original/vXjVd0Vu0MXRZnga7wEnHIIhO5B.jpg" />
+				</label>
+				<div class="cssCarousel--showOnFocus">
+					<h1>Movie 4 Headline</h1>
+				</div>
+			</li>
+			<li>
+				<label for="item-5">
+					<img src="https://image.tmdb.org/t/p/original/vXjVd0Vu0MXRZnga7wEnHIIhO5B.jpg" />
+				</label>
+				<div class="cssCarousel--showOnFocus">
+					<h1>Movie 5 Headline</h1>
+				</div>
+			</li>
+			<li>
+				<label for="item-6">
+					<img src="https://image.tmdb.org/t/p/original/vXjVd0Vu0MXRZnga7wEnHIIhO5B.jpg" />
+				</label>
+				<div class="cssCarousel--showOnFocus">
+					<h1>Movie 6 Headline</h1>
+				</div>
+			</li>
+			<li>
+				<label for="item-7">
+					<img src="https://image.tmdb.org/t/p/original/vXjVd0Vu0MXRZnga7wEnHIIhO5B.jpg" />
+				</label>
+				<div class="cssCarousel--showOnFocus">
+					<h1>Movie 7 Headline</h1>
+				</div>
+			</li>
+		</ul>
+	</div> <!-- /cssCarousel__viewport -->
+</section> <!-- /cssCarousel -->
+
+</body>
+</html>
